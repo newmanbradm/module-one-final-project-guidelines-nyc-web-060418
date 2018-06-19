@@ -1,12 +1,8 @@
-class Doctor
+class Traveller < ActiveRecord::Base
 
-  def initialize()
-
-  end
-
-  def self.get_all_doctors
-    #put rest_client stuff to hit end point
-    #iterate through data and call Doctor.create
-  end
+  has_many :visits
+  has_many :reviews
+  has_many :attractions, through: :visits
+  has_many :attractions, through: :reviews
 
 end

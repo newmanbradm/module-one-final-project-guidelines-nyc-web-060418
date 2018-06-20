@@ -45,50 +45,50 @@ dc_bike = Attraction.create(name: "DC Monuments Bike Tour", city: dc, price: 10.
 
 #nyc
 
-visit_1 = Visit.create(traveller: brad, attraction: sfga, date: DateTime.new(2017, 7, 15))
-visit_2 = Visit.create(traveller: brad, attraction: statue, date: DateTime.new(2017, 7, 18))
-visit_3 = Visit.create(traveller: david, attraction: yankee, date: DateTime.new(2017, 7, 15))
-visit_4 = Visit.create(traveller: david, attraction: skating, date: DateTime.new(2017, 12, 15))
-visit_5 = Visit.create(traveller: tashawn, attraction: statue, date: DateTime.new(2017, 7, 18))
-visit_6 = Visit.create(traveller: tashawn, attraction: sfga, date: DateTime.new(2017, 7, 15))
-visit_7 = Visit.create(traveller: zach, attraction: statue, date: DateTime.new(2017, 7, 18))
-visit_8 = Visit.create(traveller: zach, attraction: yankee, date: DateTime.new(2017, 7, 30))
+visit_1 = Visit.create(traveller: brad, attraction: sfga, date: "July 15, 2017")
+visit_2 = Visit.create(traveller: brad, attraction: statue, date: "July 18, 2017")
+visit_3 = Visit.create(traveller: david, attraction: yankee, date: "July 15, 2017")
+visit_4 = Visit.create(traveller: david, attraction: skating, date: "December 15, 2017")
+visit_5 = Visit.create(traveller: tashawn, attraction: statue, date: "July 18, 2017")
+visit_6 = Visit.create(traveller: tashawn, attraction: sfga, date: "July 15, 2017")
+visit_7 = Visit.create(traveller: zach, attraction: statue, date: "July 18, 2017")
+visit_8 = Visit.create(traveller: zach, attraction: yankee, date: "July 30, 2017")
 
 #miami
 
-visit_9 = Visit.create(traveller: brad_pitt, attraction: jungle, date: DateTime.new(2017, 7, 15))
-visit_10 = Visit.create(traveller: brad_pitt, attraction: church, date: DateTime.new(2017, 7, 18))
-visit_11 = Visit.create(traveller: brad_pitt, attraction: hard_rock, date: DateTime.new(2017, 7, 18))
-visit_12 = Visit.create(traveller: david, attraction: hard_rock, date: DateTime.new(2017, 7, 15))
-visit_13 = Visit.create(traveller: david, attraction: dolphin_swim, date: DateTime.new(2017, 9, 15))
-visit_14 = Visit.create(traveller: david_hasselhoff, attraction: dolphin_swim, date: DateTime.new(2017, 9, 15))
-visit_15 = Visit.create(traveller: david_hasselhoff, attraction: hard_rock, date: DateTime.new(2017, 7, 15))
+visit_9 = Visit.create(traveller: brad_pitt, attraction: jungle, date: "July 15, 2017")
+visit_10 = Visit.create(traveller: brad_pitt, attraction: church, date: "July 18, 2017")
+visit_11 = Visit.create(traveller: brad_pitt, attraction: hard_rock, date: "July 18, 2017")
+visit_12 = Visit.create(traveller: david, attraction: hard_rock, date: "July 15, 2017")
+visit_13 = Visit.create(traveller: david, attraction: dolphin_swim, date: "September 15, 2017")
+visit_14 = Visit.create(traveller: david_hasselhoff, attraction: dolphin_swim, date: "September 15, 2017")
+visit_15 = Visit.create(traveller: david_hasselhoff, attraction: hard_rock, date: "July 15, 2017")
 
 #los angeles
 
-visit_16 = Visit.create(traveller: brad_pitt, attraction: hollywood_tour, date: DateTime.new(2017, 8, 15))
-visit_17 = Visit.create(traveller: brad_pitt, attraction: dodger, date: DateTime.new(2017, 8, 18))
-visit_18 = Visit.create(traveller: brad_pitt, attraction: hollywood_hike, date: DateTime.new(2017, 8, 18))
-visit_19 = Visit.create(traveller: brad, attraction: hollywood_hike, date: DateTime.new(2017, 8, 15))
-visit_20 = Visit.create(traveller: brad, attraction: disney, date: DateTime.new(2017, 8, 15))
-visit_21 = Visit.create(traveller: david_hasselhoff, attraction: hollywood_hike, date: DateTime.new(2017, 8, 15))
-visit_22 = Visit.create(traveller: david_hasselhoff, attraction: hollywood_tour, date: DateTime.new(2017, 8, 18))
+visit_16 = Visit.create(traveller: brad_pitt, attraction: hollywood_tour, date: "August 15, 2017")
+visit_17 = Visit.create(traveller: brad_pitt, attraction: dodger, date: "August 18, 2017")
+visit_18 = Visit.create(traveller: brad_pitt, attraction: hollywood_hike, date: "August 18, 2017")
+visit_19 = Visit.create(traveller: brad, attraction: hollywood_hike, date: "August 15, 2017")
+visit_20 = Visit.create(traveller: brad, attraction: disney, date: "August 15, 2017")
+visit_21 = Visit.create(traveller: david_hasselhoff, attraction: hollywood_hike, date: "August 15, 2017")
+visit_22 = Visit.create(traveller: david_hasselhoff, attraction: hollywood_tour, date: "August 18, 2017")
 
 #boston
 
-visit_23 = Visit.create(traveller: brad, attraction: sfne, date: DateTime.new(2017, 10, 18))
-visit_24 = Visit.create(traveller: brad, attraction: freedom, date: DateTime.new(2017, 10, 15))
-visit_25 = Visit.create(traveller: david, attraction: fenway, date: DateTime.new(2017, 10, 18))
-visit_26 = Visit.create(traveller: david, attraction: freedom, date: DateTime.new(2017, 10, 15))
-visit_27 = Visit.create(traveller: david, attraction: boston_bike, date: DateTime.new(2017, 10, 17))
+visit_23 = Visit.create(traveller: brad, attraction: sfne, date: "October 18, 2017")
+visit_24 = Visit.create(traveller: brad, attraction: freedom, date: "October 15, 2017")
+visit_25 = Visit.create(traveller: david, attraction: fenway, date: "October 18, 2017")
+visit_26 = Visit.create(traveller: david, attraction: freedom, date: "October 15, 2017")
+visit_27 = Visit.create(traveller: david, attraction: boston_bike, date: "October 17, 2017")
 
 #dc
 
-visit_28 = Visit.create(traveller: tashawn, attraction: wh, date: DateTime.new(2017, 10, 18))
-visit_29 = Visit.create(traveller: tashawn, attraction: dc_bike, date: DateTime.new(2017, 10, 15))
-visit_30 = Visit.create(traveller: zach, attraction: wh, date: DateTime.new(2017, 10, 18))
-visit_31 = Visit.create(traveller: zach, attraction: kings, date: DateTime.new(2017, 10, 15))
-visit_32 = Visit.create(traveller: zach, attraction: fedex, date: DateTime.new(2017, 10, 17))
+visit_28 = Visit.create(traveller: tashawn, attraction: wh, date: "October 18, 2017")
+visit_29 = Visit.create(traveller: tashawn, attraction: dc_bike, date: "October 15, 2017")
+visit_30 = Visit.create(traveller: zach, attraction: wh, date: "October 18, 2017")
+visit_31 = Visit.create(traveller: zach, attraction: kings, date: "October 15, 2017")
+visit_32 = Visit.create(traveller: zach, attraction: fedex, date: "October 17, 2017")
 
 # Reviews
 

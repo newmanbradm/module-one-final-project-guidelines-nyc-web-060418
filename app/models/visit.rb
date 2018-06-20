@@ -7,4 +7,6 @@ class Visit < ActiveRecord::Base
     Visit.create(traveller: traveller, attraction: attraction, date: date)
   end
 
+
+
 end

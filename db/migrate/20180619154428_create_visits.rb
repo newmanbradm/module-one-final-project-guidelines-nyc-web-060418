@@ -3,7 +3,7 @@ class CreateVisits < ActiveRecord::Migration[5.0]
     create_table :visits do |t|
       t.integer :traveller_id
       t.integer :attraction_id
-      t.datetime :date
+      t.string :date
     end
   end
 end

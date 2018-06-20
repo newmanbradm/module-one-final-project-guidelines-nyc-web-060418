@@ -1,3 +1,5 @@
+$prompt = TTY::Prompt.new
+
 ## Traveller Methods ##
 
 ## visit methods##
@@ -59,4 +61,9 @@ end
 
 def ask_for_date_of_visit
   puts "What date are you visiting this attraction? (Include Month, Day, and Year)"
+end
+
+def compile_visit
+  attraction_of_visit = prompt to select an attraction
+
 end

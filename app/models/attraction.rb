@@ -8,7 +8,7 @@ class Attraction < ActiveRecord::Base
 
   def self.show_all_attractions
     all.map do |attraction_instance|
-      "Attraction ID #{attraction_instance.id}: #{attraction_instance.name}, #{attraction_instance.city.name}"
+      "#{attraction_instance.name}, #{attraction_instance.city.name}"
     end
   end
 

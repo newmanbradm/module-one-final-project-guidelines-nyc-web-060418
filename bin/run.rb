@@ -1,9 +1,11 @@
 require_relative '../config/environment'
 require 'pry'
+require_relative 'helper_methods.rb'
 $prompt = TTY::Prompt.new
 
 def welcome
 puts <<-TITLE
+
 █████╗ ████████╗████████╗██████╗  █████╗  ██████╗████████╗              ██╗   ██╗███████╗
 ██╔══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝              ██║   ██║██╔════╝
 ███████║   ██║      ██║   ██████╔╝███████║██║        ██║       █████╗    ██║   ██║███████╗
@@ -29,45 +31,6 @@ if $user_traveller == nil
 end
 
 
-
-# def main_menu
-#   loop do
-#     puts "What would you like to do? Please type one of the following options:"
-#     puts ["VISIT OPTIONS:", "See My Visits", "Create A Visit", "Update A Visit", "Delete A Visit", "REVIEW OPTIONS:", "See My Reviews", "Create A Review", "Update A Review", "Delete A Review", "OR:", "Exit App"]
-#     user_choice = $prompt.select("")
-#
-#     if response.downcase == "see my visits"
-#       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-#       show_visits
-#       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-#     elsif response.downcase == "create a visit"
-#       puts "Please enter the attraction id from the list below:"
-#       show_all_attractions
-#       id_for_visit = gets.chomp
-#       create_visit
-#     elsif response.downcase == "update a visit"
-#       update_a_visit
-#     elsif response.downcase == "delete a visit"
-#       delete_visit
-#     elsif response.downcase == "see my reviews"
-#       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-#       show_reviews
-#       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-#     elsif response.downcase == "create a review"
-#       create_review
-#     elsif response.downcase == "update a review"
-#       update_a_review
-#     elsif response.downcase == "delete a review"
-#       delete_review
-#     elsif response.downcase == "exit app"
-#       puts "Thanks for using Attract-US!"
-#       exit
-#     else
-#       puts "You did not enter a valid response. Please try again!"
-#     end
-#   end
-# end
-
 def main_menu
   user_choice = $prompt.select("What options would you like to see?", ["Visit Options", "Review Options", "Exit App"])
   if user_choice == "Visit Options"
@@ -88,7 +51,7 @@ def visit_menu
       show_visits
       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Create A Visit"
-
+      create_visit
     elsif user_choice == "Update A Visit"
 
     elsif user_choice == "Delete A Visit"

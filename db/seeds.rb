@@ -7,12 +7,12 @@ boston = City.create(name: "Boston")
 dc = City.create(name: "Washington DC")
 
 #Travellers
-brad = Traveller.create(name: "Brad Newman") #nyc, la, boston
-brad_pitt = Traveller.create(name: "Brad Pitt") #la, miami
-david = Traveller.create(name: "David Zeit") #nyc, miami, boston
-david_hasselhoff = Traveller.create(name: "David Hasselhoff") #la, miami
-tashawn = Traveller.create(name: "Tashawn Williams") #nyc, dc
-zach = Traveller.create(name: "Zach Vary") #nyc, dc
+brad = Traveller.create(name: "Brad Newman", email: "newmanbradm@gmail.com") #nyc, la, boston
+brad_pitt = Traveller.create(name: "Brad Pitt", email: "mrsmith05@fakemail.com") #la, miami
+david = Traveller.create(name: "David Zeit", email: "dzeit216@gmail.com") #nyc, miami, boston
+david_hasselhoff = Traveller.create(name: "David Hasselhoff", email: "kitt2000@fakemail.com") #la, miami
+tashawn = Traveller.create(name: "Tashawn Williams", email: "tashawn.williams@flatironschool.com") #nyc, dc
+zach = Traveller.create(name: "Zach Vary", email: "zach.vary@flatironschool.com") #nyc, dc
 
 #Attractions
 #NYC

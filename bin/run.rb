@@ -96,7 +96,7 @@ def visit_menu
     elsif user_choice == "Go Back"
       main_menu
     else
-      puts "Thank you for using Attract_US!"
+      puts "Thank you for using Attract-US!"
       exit
     end
   end
@@ -118,7 +118,7 @@ def review_menu
     elsif user_choice == "Go Back"
       main_menu
     else
-      puts "Thank you for using Attract_US!"
+      puts "Thank you for using Attract-US!"
       exit
     end
   end

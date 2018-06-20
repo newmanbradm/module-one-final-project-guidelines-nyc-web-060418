@@ -103,7 +103,25 @@ def visit_menu
 end
 
 def review_menu
+  loop do
+    user_choice = $prompt.select("What would you like to do?", ["See My Reviews", "Create A Review", "Update A Review", "Delete A Review", "Go Back", "Exit App"])
+    if user_choice == "See My Reviews"
+      puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+      show_reviews
+      puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    elsif user_choice == "Create A Review"
 
+    elsif user_choice == "Update A Review"
+
+    elsif user_choice == "Delete A Review"
+
+    elsif user_choice == "Go Back"
+      main_menu
+    else
+      puts "Thank you for using Attract_US!"
+      exit
+    end
+  end
 end
 
 puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"

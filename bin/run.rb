@@ -17,18 +17,18 @@ end
 
 
 puts "Hello, #{$user_traveller.name}! What would you like to do? Please type one of the following options:"
-puts ["Explore My Visits", "Explore My Reviews"]
+puts ["See My Visits", "See My Reviews"]
 
 def initial_menu
   response = gets.chomp
 
-  if response.downcase == "explore my visits"
+  if response.downcase == "see my visits"
     show_visits
-  elsif response.downcase == "explore my reviews"
+  elsif response.downcase == "see my reviews"
     show_reviews
   else
     puts "You did not enter a valid response. Please try again from the following options:"
-    puts ["Explore My Visits", "Explore My Reviews"]
+    puts ["See My Visits", "See My Reviews"]
     initial_menu
   end
 end

@@ -112,7 +112,7 @@ review_12 = Review.create(traveller: brad_pitt, attraction: hollywood_hike, rati
 
 #David
 
-review_13 = Review.create(traveller: david, attraction: yankee, rating: 5, message: "Best hot dogs eve!")
+review_13 = Review.create(traveller: david, attraction: yankee, rating: 5, message: "Best hot dogs ever!")
 review_14 = Review.create(traveller: david, attraction: skating, rating: 2, message: "My ass is killing me :(")
 review_15 = Review.create(traveller: david, attraction: hard_rock, rating: 5, message: "Mecca of football!")
 review_16 = Review.create(traveller: david, attraction: dolphin_swim, rating: 4, message: "Flipper rocks and I didn't drown.")

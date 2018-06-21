@@ -14,7 +14,3 @@ Attract-US is a Command Line Interface application that allows users to plan a v
 4. Input "ruby bin/run.rb" into the terminal and press enter to start the application.
 5. Follow the instructions on the screen to interact with the application.
 6. Enjoy!
-
-## Contributors Guide
-
-## Licensing 

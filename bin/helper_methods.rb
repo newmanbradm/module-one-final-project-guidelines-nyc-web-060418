@@ -50,7 +50,7 @@ end
 
 
 def create_visit
-  user_choice_attraction = $prompt.select("What attraction are you visitng?", [Attraction.show_all_attractions, "Go Back"].flatten)
+  user_choice_attraction = $prompt.select("Which attraction are you visitng?", [Attraction.show_all_attractions, "Go Back"].flatten)
   if user_choice_attraction == "Go Back"
     visit_menu
   else
@@ -64,7 +64,7 @@ def create_visit
 end
 
 def delete_visit
-  user_choice_visit = $prompt.select("What visit would you like to delete?", [$user_traveller.display_my_visits, "Go Back"].flatten)
+  user_choice_visit = $prompt.select("Which visit would you like to delete?", [$user_traveller.display_my_visits, "Go Back"].flatten)
   if user_choice_visit == "Go Back"
     visit_menu
   else
@@ -74,14 +74,13 @@ def delete_visit
     date_of_visit = "#{month_and_day_of_visit}, #{year_of_visit}"
     attraction_of_visit = Attraction.find_by(name: attraction_name)
     visit_to_delete = Visit.find_by(traveller: $user_traveller, attraction: attraction_of_visit, date: date_of_visit)
-    binding.pry
     Visit.all.find(visit_to_delete.id).destroy
     puts "Your visit has been deleted!"
   end
 end
 
 def create_review
-  user_choice_attraction = $prompt.select("What attraction would you like to review?", [Attraction.show_all_attractions, "Go Back"].flatten)
+  user_choice_attraction = $prompt.select("Which attraction would you like to review?", [Attraction.show_all_attractions, "Go Back"].flatten)
   if user_choice_attraction == "Go Back"
     review_menu
   else
@@ -97,6 +96,16 @@ def create_review
   puts "What would you like to say about this attraction?"
   message_of_review = gets.chomp
   $user_traveller.add_review(attraction_of_review, rating_for_review, message_of_review)
-  binding.pry
   puts "Your review has been added!"
+end
+
+def delete_review
+  user_choice_review = $prompt.select("Which review would you like to delete? (The first number is each review's specific ID number)", [$user_traveller.display_my_reviews, "Go Back"].flatten)
+  if user_choice_review == "Go Back"
+    review_menu
+  else
+    id_to_delete = user_choice_review.split(", ")[0].to_i
+    Review.all.find(id_to_delete).destroy
+    puts "Your review has been deleted!"
+  end
 end

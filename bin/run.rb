@@ -57,6 +57,7 @@ def visit_menu
       #update_a_visit
     elsif user_choice == "Delete A Visit"
       delete_visit
+      puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Go Back"
       main_menu
     else
@@ -79,7 +80,8 @@ def review_menu
     elsif user_choice == "Update A Review"
       #update_a_review
     elsif user_choice == "Delete A Review"
-      #delete_review
+      delete_review
+      puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Go Back"
       main_menu
     else

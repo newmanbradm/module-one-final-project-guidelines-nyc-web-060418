@@ -35,6 +35,12 @@ class Traveller < ActiveRecord::Base
     end
   end
 
+  def display_my_reviews
+    my_reviews.map do |review_instance|
+      "#{review_instance.id}, #{review_instance.attraction.name}, #{review_instance.rating}, #{review_instance.message}"
+    end
+  end
+
   def add_review(attraction, rating, message)
     Review.create(traveller: self, attraction: attraction, rating: rating, message: message)
   end

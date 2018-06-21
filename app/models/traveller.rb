@@ -21,13 +21,13 @@ class Traveller < ActiveRecord::Base
     Visit.create(traveller: self, attraction: attraction, date: date)
   end
 
-  def update_visit(id, date)
-    Visit.update(id, date: date)
-  end
+  # def update_visit(id, date)
+  #   Visit.update(id, date: date)
+  # end
 
-  def destroy_visit(id)
-    Visit.find(id).destroy
-  end
+  # def destroy_visit(id)
+  #   Visit.find(id).destroy
+  # end
 
   def my_reviews
     Review.all.select do |review_instance|
@@ -45,12 +45,12 @@ class Traveller < ActiveRecord::Base
     Review.create(traveller: self, attraction: attraction, rating: rating, message: message)
   end
 
-  def update_review(id, rating, message)
-    Review.update(id, rating: rating, message: message)
-  end
+  # def update_review(id, rating, message)
+  #   Review.update(id, rating: rating, message: message)
+  # end
 
-  def destroy_review(id)
-    Review.find(id).destroy
-  end
+  # def destroy_review(id)
+  #   Review.find(id).destroy
+  # end
 
 end

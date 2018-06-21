@@ -73,8 +73,9 @@ def delete_visit
     year_of_visit = user_choice_visit.split(", ")[3]
     date_of_visit = "#{month_and_day_of_visit}, #{year_of_visit}"
     attraction_of_visit = Attraction.find_by(name: attraction_name)
-    visit_to_delete = Visit.find_by(attraction: attraction_of_visit, date: date_of_visit)
-    visit_to_delete.destroy
+    visit_to_delete = Visit.find_by(traveller: $user_traveller, attraction: attraction_of_visit, date: date_of_visit)
+    binding.pry
+    Visit.all.find(visit_to_delete.id).destroy
     puts "Your visit has been deleted!"
   end
 end

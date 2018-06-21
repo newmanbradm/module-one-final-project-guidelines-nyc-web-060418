@@ -64,17 +64,13 @@ def create_visit
 end
 
 def delete_visit
-  user_choice_visit = $prompt.select("Which visit would you like to delete?", [$user_traveller.display_my_visits, "Go Back"].flatten)
+  user_choice_visit = $prompt.select("Which visit would you like to delete? (The first number is each visit's specific ID number)", [$user_traveller.display_my_visits, "Go Back"].flatten)
   if user_choice_visit == "Go Back"
     visit_menu
   else
-    attraction_name = user_choice_visit.split(", ")[0]
-    month_and_day_of_visit = user_choice_visit.split(", ")[2]
-    year_of_visit = user_choice_visit.split(", ")[3]
-    date_of_visit = "#{month_and_day_of_visit}, #{year_of_visit}"
-    attraction_of_visit = Attraction.find_by(name: attraction_name)
-    visit_to_delete = Visit.find_by(traveller: $user_traveller, attraction: attraction_of_visit, date: date_of_visit)
-    Visit.all.find(visit_to_delete.id).destroy
+    id_to_delete = user_choice_visit.split(", ")[0].to_i
+    binding.pry
+    Review.all.find(id_to_delete).destroy
     puts "Your visit has been deleted!"
   end
 end

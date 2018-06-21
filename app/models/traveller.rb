@@ -13,7 +13,7 @@ class Traveller < ActiveRecord::Base
 
   def display_my_visits
     my_visits.map do |visit_instance|
-      "#{visit_instance.attraction.name}, #{visit_instance.attraction.city.name}, #{visit_instance.date}"
+      "#{visit_instance.id}, #{visit_instance.attraction.name}, #{visit_instance.attraction.city.name}, #{visit_instance.date}"
     end
   end
 

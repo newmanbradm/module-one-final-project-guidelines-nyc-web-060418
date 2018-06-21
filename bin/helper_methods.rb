@@ -103,7 +103,7 @@ end
 def update_a_visit
   user_choice_visit = $prompt.select("Which visit would you like to update? Note: You can only update the date of your visit. If you want to update the attraction, please return to the visit menu and delete the visit or create a new visit. (The first number is each visit's specific ID number)", [$user_traveller.display_my_visits, "Go Back"].flatten)
   if user_choice_visit == "Go Back"
-    visit menu
+    visit_menu
   else
     id_to_update = user_choice_visit.split(", ")[0].to_i
     puts "What date are you now visiting this attraction? (Example Format: January 1, 2019)"
@@ -167,7 +167,7 @@ end
 def update_a_review
   user_choice_review = $prompt.select("Which review would you like to update? (The first number is each visit's specific ID number)", [$user_traveller.display_my_reviews, "Go Back"].flatten)
   if user_choice_review == "Go Back"
-    review menu
+    review_menu
   else
     id_to_update = user_choice_review.split(", ")[0].to_i
     user_choice_rating = $prompt.select("What rating would you like to give this attraction?", ["1", "2", "3", "4", "5", "Go Back"])

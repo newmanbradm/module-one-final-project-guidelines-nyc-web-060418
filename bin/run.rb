@@ -6,7 +6,7 @@ $prompt = TTY::Prompt.new
 def welcome
 puts <<-TITLE
 
-█████╗ ████████╗████████╗██████╗  █████╗  ██████╗████████╗              ██╗   ██╗███████╗
+ █████╗ ████████╗████████╗██████╗  █████╗  ██████╗████████╗              ██╗   ██╗███████╗
 ██╔══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝              ██║   ██║██╔════╝
 ███████║   ██║      ██║   ██████╔╝███████║██║        ██║       █████╗    ██║   ██║███████╗
 ██╔══██║   ██║      ██║   ██╔══██╗██╔══██║██║        ██║       ╚════╝    ██║   ██║╚════██║
@@ -52,10 +52,11 @@ def visit_menu
       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Create A Visit"
       create_visit
+      puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Update A Visit"
-
+      #update_a_visit
     elsif user_choice == "Delete A Visit"
-
+      delete_visit
     elsif user_choice == "Go Back"
       main_menu
     else
@@ -73,11 +74,12 @@ def review_menu
       show_reviews
       puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Create A Review"
-
+      create_review
+      puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     elsif user_choice == "Update A Review"
-
+      #update_a_review
     elsif user_choice == "Delete A Review"
-
+      #delete_review
     elsif user_choice == "Go Back"
       main_menu
     else

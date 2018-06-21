@@ -11,6 +11,12 @@ class Traveller < ActiveRecord::Base
     end
   end
 
+  def display_my_visits
+    my_visits.map do |visit_instance|
+      "#{visit_instance.attraction.name}, #{visit_instance.attraction.city.name}, #{visit_instance.date}"
+    end
+  end
+
   def add_visit(attraction, date)
     Visit.create(traveller: self, attraction: attraction, date: date)
   end
